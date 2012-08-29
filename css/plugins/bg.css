@@ -1,0 +1,5 @@
+.bg-fixed {position:fixed;width: 998px; height: 100%;}
+.grey-bg {background: url("/img/bg/grey-bg.png");}
+.white-bg{background:#fff;}
+.nobg {background:none !important;}
+.white-bg-alpha {background:rgba(255,255,255,0.8)}

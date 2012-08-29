@@ -1,0 +1,39 @@
+.dimmer, .fixed { 
+    position:fixed; z-index:2; display:none; width: 100%; height: 100%;
+}
+.popup {
+    height:auto; position: relative; top:50%; left:0px; width: 685px; margin: 0 auto;z-index:2;
+}
+.popup.border {
+    border: 1px solid #ccc; background:#fff; width: 886px; padding: 16px; left:50%; position:fixed; margin-left:-460px; 
+}
+.popup .close {
+    width: 15px; height: 16px;background: url("/img/icon/icon-close.png") no-repeat; position:relative; 
+    top:10px; right: 10px; position: absolute; 
+}
+.popup aside.flr { width: 204px; height:auto; margin-top:10px; padding-left:15px; border-left: 1px solid #d9d9d9; }
+.popup.reg aside.flr {margin:0px;padding-left:32px;width:210px;height:160px;}
+.popup .t-link { margin-right: -28px;}
+.popup .t-link .add {margin-left:16px;}
+.popup .srv input.price {margin-right:-10px;width:68px;}
+.popup-link {
+	height:auto; position: absolute; bottom:10%; left:50%; width: 300px; margin-left: -150px; text-align:center;
+	font-size:0.9em;
+}
+.pop-min {
+	position:absolute;width:218px;background:white;border:1px solid #998a96;z-index:2;display:none;
+}
+.pop-min:before {
+	content:"";display:block;width:10px;height:6px;top:-6px;left:50%;margin-left:-5px;
+	background:url('/img/arrow/arrow-pop.png') no-repeat; position:absolute;
+}
+.pop-min li {height:34px;border-top:1px solid #d4cdd2;padding:0 10px;cursor:pointer;}
+.pop-min li:first-child{border-top:0px;}
+.pop-min li .v-middle{height:34px;font-size:0.85em;}
+.pop-min li.active a{color:black;}
+.pop-min li a {font-weight:bold;border:none;}
+.pop-min .cnt {float:right;line-height:1.0;margin-top:5px;color:#999;font-size:0.8em;margin-top:11px;}
+
+.popup.reg {height:160px;margin-top:-80px;display:none;}
+.popup.getpass{height:82px;margin-top:-41px;}
+.popup.openprice {height: 152px;margin-top:-85px;}

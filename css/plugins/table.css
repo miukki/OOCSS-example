@@ -1,0 +1,21 @@
+.services {padding: 12px 8px;background:#fff;border: 1px solid #bfb6be;}
+.srv th {font-weight:normal;text-align:left;padding:5px 10px;color:grey;}
+.srv h3{margin:0;font-weight:bold;}
+.srv td { font-size:0.9em;padding: 8px 0px;background: url('/img/dot.png') repeat-x center center;}
+.srv .add td {padding:0px 0px 8px;}
+.srv .active a {color:black;border:none;cursor:default;}
+.srv .txt {background: #fff;padding:0 10px;}
+.srv .txt.price {width:46px;text-align:right;padding-left:5px !important;display:inline-block;}
+
+.popup table.srv{ width: 620px !important; margin-left: -10px; }
+
+.t-link {
+    position:absolute; display: block; top:0px; right: 0px; height: 12px; width: 100px; margin-right: -57px; 
+    width: 28px; text-align:left;
+}
+.t-link .edit, .t-link .add, .t-link .del {cursor:pointer;width: 12px; height: 12px; margin-left:3px; position: static;}
+.t-link i:first-child{margin-left:0px;}
+.t-link .edit, .t-link .del {background-image:url("/img/icon/icon-media.png");}
+.t-link .edit {background-position: -68px center; background-color:transparent;}
+.t-link .del {background-position: -83 center;}
+.t-link .add {margin-top:7px;background-position: center center; background-image:url("/img/icon/icon-add.png");}

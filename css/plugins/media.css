@@ -1,0 +1,44 @@
+.media{background: #fff; border:1px solid #ccc; display: inline-block;margin-left:14px; width: 214px;}
+.media:first-child {margin-left:0px;}
+.media .img{ width:200px; height:140px; margin:7px;}
+.media .title{ 
+	width:174px;color:black; font-size: 1.15em; display: inline-block; margin: 5px 0px 7px; height: 15px;
+	overflow:hidden; line-height:1.0;font-weight:bold;
+}
+.media .desc {
+	overflow:hidden;margin-bottom:10px;height:15px;color:#666;font-size:1.0em;font-style:italic; display:inline-block;}
+.pattern {
+    border-width:1px 0 0 0; border-style:dashed; border-color:#ccc;
+}
+.media .pattern {padding: 4px 7px;}
+.media .pattern:first-child { border:none;}
+.media .price {
+    padding: 15px 7px;text-align:center; color:#404040; font-size:2.2em; line-height:1.0; height: 26px; 
+	text-align:left !important;text-indent:-2px; font-family: Tahoma; cursor: pointer;
+}
+.media .dscr {font-size:0.9em;height:46px;margin-bottom:12px;overflow:hidden;margin-top:8px;line-height:1.4;}
+.media .rate {padding:14px 7px;}
+.media .rate-min {padding:8px 7px;}
+
+.rating {
+    width: 74px; height: 14px; display:inline-block; background-image:url("/img/icon/rating.png"); background-repeat:repeat-x;
+	cursor:pointer; background-position: 0px -1px;line-height:1.0;
+}
+.rating.txt { margin-left:47px; }
+.rating.txt:before {
+    content: "Оценка: ";font-size:0.85em; display:block;position:absolute; margin-left: -45px; line-height: 14px; line-height: 14px; text-indent:-2px;
+}
+.profile .rating.txt {margin-left:50px;}
+.profile .rating.txt:before {content: "Рейтинг:" ; font-size:0.9em; margin-left: -55px;}
+
+.comments:before {background-position: -16px 0; content: ""; display:inline-block; width: 13px; height: 14px; margin-right:3px;vertical-align:top;}
+.comments {font-size: 0.9em; height: 14px; line-height: 16px;}
+.media-title {padding:5px 7px;}
+
+.salons .media:first-child{margin-left:14px;}
+.salons .media.adv {border-color:#8a6e88 !important; position:relative;}
+.salons .media.adv:after {
+	display:block;content:"объявление";padding:0px 3px;line-height:14px;position:absolute;height:15px;top:-15px;right:-1px;
+	font-size:10px;color:white;background-color:#8a6e88;}
+ul.salons {margin-left:-14px;}
+ul.salons li {margin-bottom:40px;}

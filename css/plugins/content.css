@@ -1,0 +1,20 @@
+html, body{position: relative; height: 100%; min-height: 100%;}
+body{
+    font-size:13px;line-height:1.231;font-family:arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;
+    background: #fff; color:#444;}
+.content { padding: 40px; }
+a { color: #153D66; text-decoration:none; border-width: 0 0 1px 0; border-style: dashed; border-color: #ccc;}
+a:hover, .media .title:hover, .add-review-link a:hover, .msg-head .tool a:hover, .submit:hover a, .submit.add:hover a,
+.pop-min li:hover a { color: #971f20; text-decoration: none;}
+a:visited {
+}
+a:active {
+	color: #971f20;
+}
+a.line {border:none;text-decoration:underline;}
+a.line:hover {text-decoration:underline;}
+p{line-height:1.4;font-size:1.0em;}
+.fs-normal {font-size:1.0em !important;}
+.fs-zoom {font-size:1.1em !important;line-height:1.6 !important;}
+.normal {font-weight:normal !important;}
+.show{display:block !important;}

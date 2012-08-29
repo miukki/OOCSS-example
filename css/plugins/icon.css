@@ -1,0 +1,51 @@
+i { background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
+.icon-user { 
+	width: 32px; height: 32px; position: relative; margin-top:-3px; margin-right:3px;
+	border-radius: 500px; -webkit-border-radius: 500px; background-position:center center;
+}
+.icon-heart {
+    background-image: url("/img/icon/icon-heart.png"); width: 18px; height: 18px; margin-top: 3px;
+}
+.fav .icon-heart {margin-top:-2px;}
+.icon-heart.no-add{opacity:0.5;-moz-opacity:0.5;-webkit-opacity:0.5;-khtml-opacity:0.5;}
+.icon-heart.plus, .icon-heart.minus { color:#fff; font-weight: bold; line-height: 16px; text-align:center;}
+.icon-heart.plus {line-height:18px;font-size:11px;text-indent:-1px;}
+.icon-heart.plus:after {content: "+";}
+.icon-heart.minus:after {content: "-";}
+.icon-checkbox {
+    width: 10px; height: 10px; background-image: url("/img/icon/icon-checkbox.png");
+}
+.icon-checkbox.check {
+    background-position: -10px 0px;
+}
+.icon-price, .icon-geo, .icon-sort {
+    background-image: url("/img/icon/icon-sprite.png");
+}
+.icon-price {
+    width: 7px; height: 11px; margin-top:-3px;
+}
+.icon-geo {
+    width: 8px; height: 11px; background-position: -11px 0px; margin-top: -3px;
+}
+.icon-sort {
+    width: 12px; height: 11px; margin-top: -2px;
+}
+.sortcost.up .icon-sort {background-position: -24px 0px;}
+.sortcost.down .icon-sort {background-position: -39px 0px;}
+.sortcost.up .link:before{content:"от дорогих к дешевым";}
+.sortcost.down .link:before{content:"от дешевых к дорогим";}
+
+.icon-search {
+    background: url("/img/icon/icon-search.png") no-repeat 94% 7px;
+}
+.icon-i {width:5px;height:21px;background-image: url("/img/icon/icon-i.png");margin:2px 0 0 -4px;vertical-align:top;}
+.icon-q, .icon-star, .comments:before, .add-review-link:before { background-image:url("/img/icon/icon-media.png"); }
+.icon-q {
+    display:none;width:12px;height:14px;vertical-align:top; background-position: -33px 0;margin-left:6px;margin-top:3px;
+}
+.pattern.price:hover .icon-q {
+	display:inline-block;
+}
+.icon-star {
+    width: 15px; height: 14px; background-position: -1px -1px;
+}

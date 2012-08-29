@@ -1,0 +1,54 @@
+header { height: 100px;  border-bottom: 1px solid #ccc1c9; background: #fff;}
+header .v-middle {height: 100px;}
+.header {position:relative;}
+.header:after {
+    content: ""; display:block; position: absolute; z-index:1; width: 14px; height: 13px; left: -28px; 
+    background: url("/img/arrow/arrow-header.png") no-repeat; }
+nav {
+    padding: 15px 0; height: 20px; border-bottom: 1px solid #b3a9b0; background: #fff;
+	box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);
+}
+nav li { display:inline-block; padding: 0 15px; position: relative;}
+nav li:before {
+    content: ""; display:block; width: 1px ; height: 12px; background: #d9d9d9; left: 0px; top: 3px; position: absolute;
+}
+nav li:first-child:before { display:none;}
+nav li:first-child { padding-left: 0px !important; border:none;}
+
+aside.flr { width: 184px; height:108px; margin-left: 50px;}
+aside.mid {width: 230px; height:auto; }
+
+.menu { margin:0px;list-style-type: none; padding:0;width:184px;position:fixed;z-index:1;}
+.menu li { 
+    border-width: 0px 1px 1px 1px; border-style:solid; border-color:#bfb6be; background: #fff; font-size:0.85em; line-height: 1.0; padding: 0 10px; 
+    height: 33px; line-height: 33px;
+}
+.menu li:first-child{
+    border-width: 1px;
+}
+.menu li.active a {font-weight:bold; color:#fff; border:none; cursor: default;}
+.menu li.active {
+    background: black; position: relative; border-color: transparent;
+}
+.menu li.active:before { 
+    content: ""; display: block; position: absolute; height: 33px; width: 15px; left: -15px; top: 0px;
+    background: url("/img/arrow/arrow-menu.png") no-repeat;}
+
+footer { margin-top:-100px; position:relative; height: 100px; bottom: 0px; left:0px; background: url('/img/footer.png') repeat-x top left;}
+footer .v-middle {height: 100px; width: auto;}
+footer .copy {width: 120px; margin: auto;}
+footer .contact { line-height: 20px;}
+.footer {width: 920px; margin: 0 auto; padding: 0 40px !important;font-size: 0.9em;}
+
+.empty {
+height:100px; 
+}
+.wrapper { 
+    height:auto !important; height:100%; min-height:100%; position: relative;}
+.wr {
+    width: 920px; margin: 0 auto; text-align: left;
+} 
+.left-side {width: 640px; float:left;}   
+img.logo {margin-top: 5px;}
+.filter {float:right;margin-top:-2px !important;}

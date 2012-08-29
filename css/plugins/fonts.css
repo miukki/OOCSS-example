@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'Rubl Sign';
+		src: url('rouble.eot'); /* IE9 Compat Modes */
+		src: url('rouble.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		     url('rouble.woff') format('woff'), /* Modern Browsers */
+		     url('rouble.ttf')  format('truetype'), /* Safari, Android, iOS */
+		     url('rouble.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+.rub {
+	font-family: 'Rubl Sign' !important;font-size:29px;margin-left:-10px;
+}
