@@ -27,7 +27,7 @@ input[type="search"], input[type="submit"], .submit {
 }
 
 input[type="search"] { 
-    border: 1px solid #b3afb2; padding: 0px 20px 0px 8px; color: #807380; height: 22px; width: 104px; margin-right: 8px;
+    border: 1px solid #b3afb2; padding: 0px 18px 0px 8px; color: #807380; height: 22px; width: 110px; margin-right: 8px;
 }
 input[type="submit"], .submit {
     height: 28px; line-height: 27px; text-align:center; color: #5c6166;

@@ -16,7 +16,7 @@
     <!-- Prompt IE 6 users to install Chrome Frame.  chromium.org/developers/how-tos/chrome-frame-getting-started -->
     <!--[if lt IE 7]><p class="chromeframe">Your browser is <em>ancient!</em>  <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-	<div class="dimmer white-bg-alpha" id="dimmer"></div>
+	<div class="dimmer" id="dimmer"></div>
 	<div id="popup"></div>
 
 
@@ -159,10 +159,10 @@
             <h2 class="normal" id="favorites">Избранное</h2>
             
             <ul class="mb-70">
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review1.jpg" />
                     <div class="media-title">
-                        <i class="icon-heart flr plus"></i>
+                        <i class="icon-heart flr minus"></i>
                         <a href="#" class="title line g">Галаконцерт</a><br/>
                         <span class="g desc">Хлопотанье будды, 3A.</span>
                     </div>
@@ -177,7 +177,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review2.jpg" />
                     <div class="media-title">
                         <i class="icon-heart flr minus"></i>
@@ -195,7 +195,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review3.jpg" />
                     <div class="media-title">
                         <i class="icon-heart flr minus"></i>
@@ -268,6 +268,7 @@
     <script src="js/cst.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/form.js"></script>
+    <script src="js/cards.js"></script>
     <!-- end scripts -->
 
     <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.

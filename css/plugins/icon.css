@@ -8,7 +8,7 @@ i { background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
 }
 .fav .icon-heart {margin-top:-2px;}
 .icon-heart.no-add{opacity:0.5;-moz-opacity:0.5;-webkit-opacity:0.5;-khtml-opacity:0.5;}
-.icon-heart.plus, .icon-heart.minus { color:#fff; font-weight: bold; line-height: 16px; text-align:center;}
+.icon-heart.plus, .icon-heart.minus { color:#fff; font-weight: bold; line-height: 16px; text-align:center;cursor:pointer;}
 .icon-heart.plus {line-height:18px;font-size:11px;text-indent:-1px;}
 .icon-heart.plus:after {content: "+";}
 .icon-heart.minus:after {content: "-";}

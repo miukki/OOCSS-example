@@ -1,10 +1,9 @@
-/* by miukki
-*/
 window.APP = {
 	'cst': {},
 	'popup': {},
 	'form': {},
-	'slider': {}
+	'slider': {},
+	'cards': {}
 };
 
 $('document').ready(function(){
@@ -12,6 +11,7 @@ $('document').ready(function(){
 	var self = APP;
 	self.slider.open();
 	self.form.open();
+	self.cards.open();
 	
 	$('.add-review-link').live('click', function(){
 		event.preventDefault();
@@ -29,15 +29,13 @@ $('document').ready(function(){
 
 	
 	$popup.find('#getpass').live('click', function () {
-		var url_getpass =  '/tmpl/popup/getpass.tmpl';
-		_openPopup(self.cst.EMPTY, url_getpass);
+		_openPopup(self.cst.EMPTY, '/tmpl/popup/getpass.tmpl');
 	});
 	
 	
 	$popreg.bind('click', function () {
 		event.preventDefault();
-		var url = '/tmpl/popup/reg.tmpl';
-		_openPopup(self.cst.EMPTY, url);
+		_openPopup(self.cst.EMPTY, '/tmpl/popup/reg.tmpl');
 	});
 	
 	$sortcost.find('.link').bind('click', function (){
@@ -73,7 +71,7 @@ $('document').ready(function(){
 
 	
 	var _openPopup = function (data, url) {
-		$dimmer.show();
+		$dimmer.addClass('white-bg-alpha').show();
 		$.get(url, function (template) {
 			$popup.html('');
 			$.tmpl(template, data).appendTo($popup);
