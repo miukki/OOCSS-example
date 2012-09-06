@@ -39,13 +39,8 @@ $('document').ready(function(){
 	});
 	
 	$sortcost.find('.link').bind('click', function (){
-		var parent = $sortcost;
-		if(parent.hasClass('up')){
-			parent.removeClass('up').addClass('down');
-		}
-		else {
-			parent.addClass('up').removeClass('down');
-		};
+		event.preventDefault();
+		_openPopupMini(self.cst.SORT, $(this));
 	});
 	
 	$location.bind('click', function () {
@@ -93,23 +88,28 @@ $('document').ready(function(){
 				$.tmpl(template, data).appendTo(list);
 				$popup.find('#popup-mini').offset( function (i, val) {
 					return { 
-						top: elem.offset().top + elem.innerHeight() + 6, 
+						top: elem.offset().top + elem.innerHeight() + 11, 
 						left: elem.offset().left + elem.innerWidth()/2 - $(this).innerWidth()/2 
 					};
 				}).show();
+				$popup.show();
 			});
 			_closeAble();
 		});
 	};
 	
 	var _closePopup = function () {
-		$popup.html('');
+		$popup.html('').hide();
 		$dimmer.hide();
 	};
 
 	var _closeAble = function () {
-		$dimmer.bind('click', _closePopup);
-		$('#close').bind('click', _closePopup)
+		$dimmer.live('click', _closePopup);
+		$('#close').live('click', _closePopup)
+	};
+	
+	if($popup.length){
+		_closeAble();
 	};
 
 

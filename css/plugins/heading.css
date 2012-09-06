@@ -9,7 +9,7 @@ h2 { font-size: 1.9em; }
 h3 {font-size:1.4em}
 
 header h1 {font-size:2.8em;font-weight:normal;text-indent:3px;}
-header h1 a { border-bottom: 2px dashed #153d66; text-decoration: none;}
-header h1 a:hover {border: none;}
+header h1 a { display:inline-block; line-height: 30px; width:222px; border-bottom: 2px dashed #153d66; text-decoration: none;}
+header h1 a:hover {border-bottom: 2px dashed #971f20;}
 
 .popup h1 {margin-bottom:0.8em;}

@@ -5,7 +5,7 @@ body{
 .content { padding: 40px; }
 a { color: #153D66; text-decoration:none; border-width: 0 0 1px 0; border-style: dashed; border-color: #ccc;}
 a:hover, .media .title:hover, .add-review-link a:hover, .msg-head .tool a:hover, .submit:hover a, .submit.add:hover a,
-.pop-min li:hover a { color: #971f20; text-decoration: none;}
+.pop-min li:hover a { color: #971f20; text-decoration: none; border-color: #971f20;}
 a:visited {
 }
 a:active {

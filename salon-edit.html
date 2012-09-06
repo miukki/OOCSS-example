@@ -74,6 +74,12 @@
 
             <div class="cf mb-30">
                 <div class="map flr">
+
+					<!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (начало) -->
+					<img src="http://static-maps.yandex.ru/1.x/?lang=ru-RU&ll=92.90842693914789,56.028677539579135&size=222,222&z=16&l=map" alt="Карта"/>
+					<div style="width: 222px; text-align: center;"><a href="http://api.yandex.ru/maps/tools/constructor/?lang=ru-RU" target="_blank" style="color: #1A3DC1; font: 13px Arial,Helvetica,sans-serif;">Создано с помощью инструментов Яндекс.Карт</a></div>
+					<!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+
                 </div>
             </div>
             
@@ -132,7 +138,7 @@
                 <h3>Отзывов пока нет</h3>
                 <fieldset><textarea id="textarea" class="flow-x brbx" placeholder="Поделитесь вашиими впечатлениями">Поделитесь вашиими впечатлениями</textarea></fieldset>
                 <input type="submit" class="submit flr" value="Опубликовать" /> 
-                <span class="rating txt fll">
+                <span id="rating" class="rating txt fll">
                     <i class="icon-star"></i>
                 </span>
             </div>
@@ -147,28 +153,18 @@
 
 <footer>
     <div class="footer">
-            <span class="contact fll">
-                <span class="v-middle">
-                    Электронная почта: <a href="#">mail@xochukrasivo.ru</a><br/>
-                    Телефон: <nobr>+7 391 223-45-16</nobr><br/>
-                    <a href="#">О проекте</a>
-                </span>
-            </span>
-
-            <div class="flr txtR">
-                <span class="v-middle">
-                    Сделано в студии<br/>
-                    <a href="#"><img src="/img/logo.png"  class="logo" alt="title" /></a>
-                </span>
-            </div>
-
-            <div class="txtC copy">
-                <span class="v-middle">
-                    2012&nbsp;&copy;&nbsp;<a href="#" class="line">Хочу&nbsp;красиво!</a>
-					<div class="submit add"><a href="#">добавить салон</a></div>
-                </span>
-            </div>
-            
+ 	    <span class="contact fll">
+		     Электронная почта: <a href="#">mail@xochukrasivo.ru</a><br/>
+		     Телефон: <nobr>+7 391 223-45-16</nobr><br/>
+		     <a href="#">О проекте</a>
+	    </span>
+	    <div class="flr txtR cnts">
+		     Дизайн и верстка<br/><a href="http://www.bureauit.ru">Бюро ИТ</a>
+	    </div>
+	    <div class="txtC copy">
+		     2012&nbsp;&copy;&nbsp;<a href="#" class="line">Хочу&nbsp;красиво!</a>
+			<div class="submit add"><a href="#">добавить салон</a></div>
+	    </div>
     </div>
 </footer>
 

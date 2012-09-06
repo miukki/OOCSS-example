@@ -39,8 +39,8 @@ footer { margin-top:-100px; position:relative; height: 100px; bottom: 0px; left:
 footer .v-middle {height: 100px; width: auto;}
 footer .copy {width: 120px; margin: auto;}
 footer .contact { line-height: 20px;}
-.footer {width: 920px; margin: 0 auto; padding: 0 40px !important;font-size: 0.9em;}
-
+.footer {width: 920px; margin: 0 auto; padding: 20px 40px 0px !important; font-size: 0.9em;}
+.footer .cnts {line-height:20px;}
 .empty {
 height:100px; 
 }

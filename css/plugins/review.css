@@ -14,6 +14,7 @@ ul.msg {margin-top:10px;}
 .msg-img {
 	width:48px;height:48px; float:left; border-radius: 500px; -webkit-border-radius: 500px; margin-right:14px;
 }
+.msg .rating{cursor:default !important;}
 .msg-head .tool {display:none;font-size:0.85em;padding-left:15px;margin-left:9px;background:url("/img/border.png") no-repeat left center;}
 .msg-head .tool a {color:#6b8599;}
 .msg li:hover .tool {display:inline;}
