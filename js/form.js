@@ -18,24 +18,37 @@
 				$.tmpl(template, APP.cst.DATA_ADD_FORM).appendTo($services);
 				_checkCategory();
 			});
-
-			
 		});
 	
+			
 		var _checkCategory = function () {
-			$('.form-check').find('.item').live( 'click', function(){
-				var $typeselect = $(this).parents('tr.add').find('.services-select');
-				if($(this).hasClass('js-name')){
-					console.log();
-					$typeselect.hide();
-				}
-				else{
-					$typeselect.show();
-				};
-			});
+
+
+				$services.find('.services-select').live('click', function(){
+					if($(this).hasClass('js-able')){
+						APP.popup.openPopupMini(APP.cst.CATEGORY, $(this));
+					};
+				});
+
+
+				$services.find('.form-check').find('.item').live( 'click', function(){
+					var $typeselect = $(this).parents('tr.add').find('.services-select');
+					if($(this).hasClass('js-name')){
+						console.log('1');
+						$typeselect.removeClass('js-able').hide();
+					}
+					else{
+						$typeselect.addClass('js-able').show();
+					};
+				});	
+	
+		
 		};
+			
+	
 		
 		var $tools = $services.find('.t-link');
+		
 		
 		$tools.find('.add').live('click', function () {
 			var $marker = $(this).parent().parent().parent().parent();
