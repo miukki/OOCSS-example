@@ -133,9 +133,10 @@ input.select[readonly="readonly"]{
 .reg h3{margin:0;}
 .reg .submit-block {margin:0;}
 
-form.auth{width:200px;}
+form.auth {width:200px;}
 
-.soc-desc{
+.soc-desc {
+	border-radius:4px; -webkit-border-radius:4px;
 	margin:25px 0px 0px 20px;width:67px;color:white;font-style:italic;text-align:center;display:inline-block;
 	vertical-align:top; background:black; height:18px; line-height:18px; font-size:95%;
 }
