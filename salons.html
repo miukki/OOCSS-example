@@ -67,8 +67,8 @@
     
 <div class="wr pt-40 cf">
 
-            <ul class="salons">
-                <li class="media">
+            <ul id="cards" class="salons">
+                <li class="media js-card">
                     <a href="#"><img class="img" src="img/temp/temp-review1.jpg" /></a>
                     <div class="media-title">
                         <i class="icon-heart flr plus"></i>
@@ -86,7 +86,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <a href="#"><img class="img" src="img/temp/temp-review2.jpg" /></a>
                     <div class="media-title">
                         <i class="icon-heart flr plus no-add"></i>
@@ -104,7 +104,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <a href="#"><img class="img" src="img/temp/temp-review3.jpg" /></a>
                     <div class="media-title">
                         <i class="icon-heart flr plus no-add"></i>
@@ -122,7 +122,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review4.jpg" />
                     <div class="media-title">
                         <i class="icon-heart flr plus no-add"></i>
@@ -158,7 +158,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review6.jpg" />
                     <div class="media-title">
                         <i class="icon-heart flr plus no-add"></i>
@@ -176,7 +176,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review7.jpg" />
                     <div class="media-title">
                         <i class="icon-heart flr plus no-add"></i>
@@ -194,7 +194,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review8.jpg" />
                     <div class="media-title">
                         <i class="icon-heart flr plus no-add"></i>
@@ -212,7 +212,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review9.jpg" />
                     <div class="media-title">
                         <i class="icon-heart flr plus no-add"></i>
@@ -230,7 +230,7 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review10.jpg" />
                     <div class="media-title">
                         <i class="icon-heart flr plus no-add"></i>
@@ -248,10 +248,10 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review11.jpg" />
                     <div class="media-title">
-                        <i class="icon-heart flr plus"></i>
+                        <i class="icon-heart flr plus no-add"></i>
                         <a href="#" class="title line g">Зеркало</a><br/>
                         <span class="g desc">Aэрозоль, 3A.</span>
                     </div>
@@ -266,10 +266,10 @@
                     </div>
                 </li>
 
-                <li class="media">
+                <li class="media js-card">
                     <img class="img" src="img/temp/temp-review12.jpg" />
                     <div class="media-title">
-                        <i class="icon-heart flr plus"></i>
+                        <i class="icon-heart flr plus no-add"></i>
                         <a href="#" class="title line g">Бонжур</a><br/>
                         <span class="g desc">Aэрозоль, 3A.</span>
                     </div>
@@ -277,7 +277,7 @@
                         300&#151;500&nbsp;<font class="rub">a</font><i class="icon-q"></i>
                     </div>
                     <div class="pattern rate">
-                        <span class="rating"><!-- add icon-star when bind click.. -->
+                        <span class="rating">
                             <i class="icon-star"></i>
                         </span>
                         <span class="comments flr">55</span>
@@ -286,7 +286,7 @@
                 
             </ul>
 			<div class="submit-block salons">
-				<div class="submit"><a href="#">показать следующие шесть</a></div>
+				<div class="submit"><a id="add-card" href="#">показать следующие восемь</a></div>
 			</div>
         
     </div>
@@ -321,7 +321,6 @@
 
     <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 
     <!-- scripts concatenated and minified via build script -->

@@ -22,7 +22,7 @@
 
 .rating {
     width: 74px; height: 14px; display:inline-block; background-image:url("/img/icon/rating.png"); background-repeat:repeat-x;
-	background-position: 0px -1px;line-height:1.0;
+	background-position: 0px -1px;line-height:1.0; text-align:left;
 }
 .rating.txt { margin-left:47px; }
 .rating.txt:before {

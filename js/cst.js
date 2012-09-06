@@ -26,6 +26,17 @@
 			{ name: "тип услуги2" }
 		],
 
+		'CARD': [
+			{ url: "temp-review1", title: "тип услуги1", address: "Авиамторная 20", price: "300&#151;500", commensts: 55 },
+			{ url: "temp-review1", title: "тип услуги1", address: "Авиамторная 20", price: "300&#151;500", commensts: 55 },
+			{ url: "temp-review1", title: "тип услуги1", address: "Авиамторная 20", price: "300&#151;500", commensts: 55 },
+			{ url: "temp-review1", title: "тип услуги1", address: "Авиамторная 20", price: "300&#151;500", commensts: 55 },
+			{ url: "temp-review1", title: "тип услуги1", address: "Авиамторная 20", price: "300&#151;500", commensts: 55 },
+			{ url: "temp-review1", title: "тип услуги1", address: "Авиамторная 20", price: "300&#151;500", commensts: 55 },
+			{ url: "temp-review1", title: "тип услуги1", address: "Авиамторная 20", price: "300&#151;500", commensts: 55 },
+			{ url: "temp-review1", title: "тип услуги1", address: "Авиамторная 20", price: "300&#151;500", commensts: 55 }
+		],
+
 		'EMPTY': {},
 		'PRICE': [
 		  { title: "Парикмакерские", cost: "300", category: false },

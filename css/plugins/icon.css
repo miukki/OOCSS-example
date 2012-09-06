@@ -8,6 +8,8 @@ i { background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
 }
 .fav .icon-heart {margin-top:-2px;}
 .icon-heart.no-add{opacity:0.5;-moz-opacity:0.5;-webkit-opacity:0.5;-khtml-opacity:0.5;}
+.icon-heart.no-add:hover {opacity:1.0;-moz-opacity:1.0;-webkit-opacity:1.0;-khtml-opacity:1.0;}
+
 .icon-heart.plus, .icon-heart.minus { color:#fff; font-weight: bold; line-height: 16px; text-align:center;cursor:pointer;}
 .icon-heart.plus {line-height:18px;font-size:11px;text-indent:-1px;}
 .icon-heart.plus:after {content: "+";}
@@ -39,7 +41,7 @@ i { background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
     background: url("/img/icon/icon-search.png") no-repeat 94% 7px;
 }
 .icon-i {width:5px;height:21px;background-image: url("/img/icon/icon-i.png");margin:2px 0 0 -4px;vertical-align:top;}
-.icon-q, .icon-star, .comments:before, .add-review-link:before { background-image:url("/img/icon/icon-media.png"); }
+.icon-q, .comments:before, .add-review-link:before { background-image:url("/img/icon/icon-media.png"); }
 .icon-q {
     display:none;width:12px;height:14px;vertical-align:top; background-position: -33px 0;margin-left:6px;margin-top:3px;
 }
@@ -47,5 +49,5 @@ i { background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
 	display:inline-block;
 }
 .icon-star {
-    width: 15px; height: 14px; background-position: -1px -1px;
+    width: 12px; height: 14px; background: url('/img/icon/icon-star.png') repeat-x 0 0;  
 }
