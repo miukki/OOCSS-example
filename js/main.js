@@ -10,7 +10,7 @@ $('document').ready(function(){
 
 	var self = APP;
 	self.slider.open();
-	self.form.open();
+	self.form.openprice();
 	self.cards.open();
 	
 	$('.js-addreview').live('click', function(){
@@ -29,13 +29,13 @@ $('document').ready(function(){
 
 	
 	$popup.find('#getpass').live('click', function () {
-		_openPopup(self.cst.EMPTY, '/tmpl/popup/getpass.tmpl');
+		APP.popup.openPopup(self.cst.EMPTY, '/tmpl/popup/getpass.tmpl');
 	});
 	
 	
 	$popreg.bind('click', function () {
 		event.preventDefault();
-		_openPopup(self.cst.EMPTY, '/tmpl/popup/reg.tmpl');
+		APP.popup.openPopup(self.cst.EMPTY, '/tmpl/popup/reg.tmpl');
 	});
 	
 	$sortcost.find('.link').bind('click', function (){
@@ -65,17 +65,6 @@ $('document').ready(function(){
 	});
 
 	
-	var _openPopup = function (data, url) {
-		$dimmer.addClass('white-bg-alpha').show();
-		$.get(url, function (template) {
-			$popup.html('');
-			$.tmpl(template, data).appendTo($popup);
-			$popup.children().show();
-			APP.popup.closeAble();
-		});
-
-	};
-
 	if($popup.length){
 		APP.popup.closeAble();
 	};

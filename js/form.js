@@ -1,8 +1,7 @@
 (function() {
 	var self = APP.form;
 	
-	self.open = function() {
-
+	self.openprice = function() {
 		var $services = $('.services').find('table');
 		if(!$services.length){
 			return false;
@@ -22,7 +21,10 @@
 	
 			
 		var _checkCategory = function () {
-
+				$services.find('.able-category').live('click', function(){
+					event.preventDefault();
+					APP.popup.openPopup(APP.cst.EMPTY, '/tmpl/popup/openprice.tmpl');
+				});
 
 				$services.find('.services-select').live('click', function(){
 					if($(this).hasClass('js-able')){
@@ -46,7 +48,6 @@
 		};
 			
 	
-		
 		var $tools = $services.find('.t-link');
 		
 		
