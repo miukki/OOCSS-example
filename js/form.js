@@ -2,6 +2,7 @@
 	var self = APP.form;
 	
 	self.open = function() {
+
 		var $services = $('.services').find('table');
 		if(!$services.length){
 			return false;
@@ -13,11 +14,26 @@
 			$.get('/tmpl/table/price.tmpl', function (template) {
 				$.tmpl(template, APP.cst.PRICE).appendTo($services);
 			});
-			$.get('/tmpl/table/edit.tmpl', function (template) {
+			$.get('/tmpl/table/add.tmpl', function (template) {
 				$.tmpl(template, APP.cst.DATA_ADD_FORM).appendTo($services);
+				_checkCategory();
 			});
+
 			
 		});
+	
+		var _checkCategory = function () {
+			$('.form-check').find('.item').live( 'click', function(){
+				var $typeselect = $(this).parents('tr.add').find('.services-select');
+				if($(this).hasClass('js-name')){
+					console.log();
+					$typeselect.hide();
+				}
+				else{
+					$typeselect.show();
+				};
+			});
+		};
 		
 		var $tools = $services.find('.t-link');
 		
@@ -30,7 +46,7 @@
 					category: true }); // true/false for check
 				$marker.before(tmpl);
 				$marker.remove();
-				$.get('/tmpl/table/edit.tmpl', function (template) {
+				$.get('/tmpl/table/add.tmpl', function (template) {
 					$.tmpl(template, APP.cst.DATA_ADD_FORM).appendTo($services);
 				});
 				
@@ -49,9 +65,8 @@
 				var tmpl = $.tmpl(template, { 
 					title: $marker.find('.title').html(), 
 					cost: $marker.find('.cost').html(), 
-					category: true,
-					srv: 'edit data', 
-					edit: true});
+					category: false, /*edit! */
+					srv: 'edit data'});
 				tmpl.appendTo($services);
 			}); // true/false for check
 			$marker.remove();

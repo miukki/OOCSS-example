@@ -1,3 +1,6 @@
+textarea:focus, input:focus {
+	border-color:black !important;
+}
 .brbx{box-sizing:border-box;-moz-box-sizing: border-box;-ms-box-sizing:border-box;-webkit-box-sizing:border-box;}
 select, input, button, textarea {color:#444;}
 
@@ -70,7 +73,7 @@ input[type="submit"]:active{
 
 .form fieldset { padding: 10px;}
 .form fieldset.active { background:#4d4d4d;margin:-1px -1px 12px -1px;}
-.form fieldset.active .input { border-color: #333; }
+.form fieldset.active .input { border-color: black; }
 
 input[type="checkbox"], input[type="radio"] {width: 10px; height: 10px; margin-right:4px; position: relative; top:-1px;}
 label {color:#808080;}
@@ -111,7 +114,7 @@ nav label {color:inherit;}
 
 .srv input[type="text"] {padding:2px 9px;}
 .srv label {font-size:90%;}
-.srv .form-check { margin-left:12px;border:1px dashed #808080;padding:5px 15px;display:inline-block;background:white;height:28px; }
+.srv .form-check { margin-left:12px;border:1px dashed #808080;padding:5px 15px;display:inline-block;background:white;height:26px; }
 .srv input.price {width:55px;text-align:center;}
 
 .address:after { 

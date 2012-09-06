@@ -28,7 +28,7 @@
 		  { title: "Маникюр", cost: "1000", category: false },
 		 ],
 		'DATA_ADD_FORM': {
-			title: 'Название',  cost: 'Цена', category: false, srv: 'Услуги', edit: false
+			title: 'Название',  cost: 'Цена', srv: 'Услуги', category: true
 		}
 		
 	};	

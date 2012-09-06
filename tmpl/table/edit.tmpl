@@ -1,11 +1,13 @@
 <tr class="add">
-    <td><input type="text" class="brbx services-title" placeholder="${title}" {{if edit}} value="${title}" {{/if}} ></td>
+    <td><input type="text" class="brbx services-title" placeholder="${title}" value="${title}" ></td>
     <td>
         <div class="form-check brbx">
-            <fieldset class="item"><input type="radio" id="name" {{if !category}}checked{{/if}}/><label for="name">Наименование</label></fieldset>
-            <fieldset class="item"><input type="radio" id="category" {{if category}}checked{{/if}}/><label for="category">Категория</label></fieldset>
+            <fieldset class="item js-name"><input type="radio" name="typename" value="name" id="name" {{if !category}}checked{{/if}}/><label for="name">Наименование</label></fieldset>
+            <fieldset class="item js-category"><input type="radio" name="typename" value="category" id="category" {{if category}}checked{{/if}}/><label for="category">Категория</label></fieldset>
         </div>
-		<input  class="select services-select" readonly="readonly" type="text" value="${srv}"/>
+		
+		<input  class="select services-select" readonly="readonly" type="text" value="${srv}" {{if !category}}style="display:none;"{{/if}} />
+		
     </td>
-    <td class="txtR"><div class="rel"><input type="text" class="price services-cost" placeholder="${cost}" {{if edit}} value="${cost}" {{/if}}> <span class="t-link"><i class="add" ></i></span></div></td>
+    <td class="txtR"><div class="rel"><input type="text" class="price services-cost" placeholder="${cost}" value="${cost}"> <span class="t-link"><i class="add" ></i></span></div></td>
 </tr>
