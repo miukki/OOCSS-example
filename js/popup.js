@@ -24,7 +24,7 @@
 				$.tmpl(template, data).appendTo(list);
 				$popup.find('#popup-mini').offset( function (i, val) {
 					return { 
-						top: elem.offset().top + elem.innerHeight() + 11, 
+						top: elem.offset().top + elem.innerHeight() + 35, 
 						left: elem.offset().left + elem.innerWidth()/2 - $(this).innerWidth()/2 
 					};
 				}).show();
