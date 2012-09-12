@@ -4,13 +4,20 @@
 	var $nav = $('nav');
 	var $typehair = $('#typehair');
 	var $location = $nav.find('.location');
+	var $location_index = $nav.find('.location').data('index');
 	var $sortcost = $('#sortcost');
 	var $popup = $('#popup');
 	var $dimmer = $('#dimmer');
 	var $header = $('header');
 	var $popreg = $header.find('.popreg'); 
+
+	$location.bind('click', function () {
+		self.openPopupMini(APP.cst.LOCATION, $(this));
+		return false;
+	});
 	
 	self.openPopupMini = function (data, elem) {
+		console.log($location_index);
 		$dimmer.show();
 		var tpl = '/tmpl/popup/mini.tmpl';
 		$.get(tpl, function (template) {
@@ -29,6 +36,25 @@
 					};
 				}).show();
 				$popup.show();
+				
+				//active elem
+				
+
+					$.each(list.find('li').get(), function(i, v){
+						console.log(v, $location_index);
+						$(v).removeClass('active');
+						if($(v).data("index") == $location_index){
+							$(v).addClass('active');
+						};
+						$(v).live('click', function(){
+							$(elem).attr('data-index', $(this).data("index"));
+							$(elem).text('район: ' + $(this).find('.txt').text());
+							$location_index = $(this).data("index");
+							self.closePopup();
+						});
+					});
+
+
 			});
 			self.closeAble();
 		});

@@ -43,11 +43,6 @@ $('document').ready(function(){
 		return false;
 	});
 	
-	$location.bind('click', function () {
-		APP.popup.openPopupMini(self.cst.LOCATION, $(this));
-		return false;
-	});
-	
 	$typehair.find('.icon-checkbox').bind('click', function(){
 		var elem = $(this);
 		

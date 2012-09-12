@@ -27,13 +27,14 @@
 	content:"";display:block;width:10px;height:6px;top:-6px;left:50%;margin-left:-5px;
 	background:url('/img/arrow/arrow-pop.png') no-repeat; position:absolute;
 }
-.pop-min li {height:34px;border-top:1px solid #d4cdd2;padding:0 10px;cursor:pointer;}
+.pop-min li {color: #153D66;height:34px;border-top:1px solid #d4cdd2;padding:0 10px;cursor:pointer;}
+.pop-min li:hover {color: #971f20;}
 .pop-min li:first-child{border-top:0px;}
 .pop-min li .v-middle{height:34px;font-size:0.85em;}
-.pop-min li.active a{color:black;}
-.pop-min li a {font-weight:bold;border:none;}
+.pop-min li.active, .pop-min li.active:hover{color:black;}
+.pop-min li {font-weight:bold;}
 .pop-min .cnt {float:right;line-height:1.0;margin-top:5px;color:#999;font-size:0.8em;margin-top:11px;}
-
+.pop-min .active .cnt {display:none;}
 .popup.reg {height:160px;margin-top:-80px;display:none;}
 .popup.getpass{height:82px;margin-top:-41px;}
 .popup.openprice {height: 152px;margin-top:-85px;}
