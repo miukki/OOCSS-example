@@ -11,8 +11,9 @@ a:visited {
 a:active {
 	color: #971f20;
 }
+
 a.line {border:none;text-decoration:underline;}
-a.line:hover {text-decoration:underline;}
+a.line:hover {text-decoration:none !important;}
 p{line-height:1.4;font-size:1.0em;}
 .fs-normal {font-size:1.0em !important;}
 .fs-zoom {font-size:1.1em !important;line-height:1.6 !important;}

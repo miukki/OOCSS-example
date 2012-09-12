@@ -2,21 +2,26 @@ i { background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
 .icon-user { 
 	width: 32px; height: 32px; position: relative; margin-top:-3px; margin-right:3px;
 	border-radius: 500px; -webkit-border-radius: 500px; background-position:center center;
+	overflow:hidden;
 }
 .icon-heart {
-    background-image: url("/img/icon/icon-heart.png"); width: 18px; height: 18px; margin-top: 3px;
+    background-image: url("/img/icon/icon-heart.png"); width: 18px; height: 18px; margin-top: 3px;cursor:pointer;
 }
 .fav .icon-heart {margin-top:-2px;}
 .icon-heart.no-add{opacity:0.5;-moz-opacity:0.5;-webkit-opacity:0.5;-khtml-opacity:0.5;}
 .icon-heart.no-add:hover {opacity:1.0;-moz-opacity:1.0;-webkit-opacity:1.0;-khtml-opacity:1.0;}
 
-.icon-heart.plus, .icon-heart.minus { color:#fff; font-weight: bold; line-height: 16px; text-align:center;cursor:pointer;}
-.icon-heart.plus {line-height:18px;font-size:11px;text-indent:-1px;}
-.icon-heart.plus:after {content: "+";}
-.icon-heart.minus:after {content: "-";}
+.icon-heart.no-add, .icon-heart.plus, .icon-heart.minus, .salons .icon-heart:before { 
+	color:#fff; font-weight: bold; line-height: 16px; text-align:center;display:block; width:18px; height:18px;
+}
+.icon-heart.no-add, .icon-heart.plus, .salons .icon-heart.no-add:before {line-height:18px;font-size:11px;text-indent:-1px;}
+.icon-heart.plus:after, .icon-heart.no-add:after, .salons .icon-heart.no-add:hover:before {content: "+";}
+
+.icon-heart.minus:after, .salons .icon-heart:hover:before {content: "-";}
 .icon-checkbox {
     width: 10px; height: 10px; background-image: url("/img/icon/icon-checkbox.png");
 }
+
 .icon-checkbox.check {
     background-position: -10px 0px;
 }
@@ -50,4 +55,9 @@ i { background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
 }
 .icon-star {
     width: 12px; height: 14px; background: url('/img/icon/icon-star.png') repeat-x 0 0;  
+}
+.icon-logo {position:relative; display:inline-block;}
+.icon-logo:before{
+	content: ""; display:block; width: 19px; height: 17px; position: absolute; top:1px; left:-21px;
+	background: url('/img/icon/icon-logo.png') no-repeat;
 }
