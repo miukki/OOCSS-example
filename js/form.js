@@ -1,6 +1,10 @@
 (function() {
 	var self = APP.form;
 	
+	$('#filter_search').click(function(){
+		$(this).attr('placeholder', '');
+	});
+	
 	self.openprice = function() {
 		var $services = $('.services').find('table');
 		if(!$services.length){
