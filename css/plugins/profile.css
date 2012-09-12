@@ -5,9 +5,11 @@
 .user-block:after { content: "}"; padding-left:5px; right:0px;}
 .user-block:before { content: "{";padding-right:5px; left:0px;}
 .user-block p {margin:4px 0px;text-align:center;line-height:1.6;}
-.fav {padding-left: 15px; margin-left: 15px; border-left: 1px solid #d9d9d9;}
-.fav-txt {border-bottom: 1px solid #b5b5b5;}
-.fav, .name {display:inline-block;margin-top:8px;}
+.user-block .fav {padding-left: 15px; margin-left: 12px;position:relative}
+.user-block .fav:before {content: ""; display:block; background: #d9d9d9; height:12px; width:1px; position:absolute; top:0px; left:0px;}
+
+.user-block .fav-txt {border-bottom: 1px solid #b5b5b5;}
+.user-block .fav, .user-block .name {display:inline-block;margin-top:8px;}
 
 .profile { 
 	border: 1px solid #bfb6be; background: #fafafa; position:relative;
@@ -20,7 +22,7 @@
 }
 .profile .img-view img { width: 630px; height:220px;}
 .tools { font-size:0.85em; width: 145px; height:100px;}
-.tools a {display:inline-block; margin: 18px 22px 0px 4px;}
+.tools a {display:inline-block; margin: 18px 20px 0px 4px;}
 .profile .edit {
     font-size:0.85em; width: 100px; height: 19px; line-height: 16px;position: absolute; background: rgba(0,0,0,0.7); 
     bottom: 0; left:0; text-align: center;
