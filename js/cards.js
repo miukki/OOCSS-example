@@ -20,12 +20,11 @@
 		});
 		
 		$('#add-card').click(function(){
-			event.preventDefault();
 			var $cards = $('#cards');
 			$.get('/tmpl/card.tmpl', function (template) {
 				$.tmpl(template, APP.cst.CARD).appendTo($cards);
 			});
-			
+			return false;
 		});
 		
 	};

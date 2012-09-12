@@ -53,18 +53,18 @@
 		});
 		
 		$('.link-info').click(function () {
-			event.preventDefault();
 			$(window).scrollTop(0);
+			return false;
 		});
 		
 		$('.link-fav').click(function () {
-			event.preventDefault();
 			$(window).scrollTop($favorites.offset().top - 230);
+			return false;
 		});
 		
 		$('.link-feedback').click(function () {
-			event.preventDefault();
 			$(window).scrollTop($feedback.offset().top - 260);
+			return false;
 		});
 		
 	};

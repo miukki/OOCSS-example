@@ -14,8 +14,8 @@ $('document').ready(function(){
 	self.cards.open();
 	
 	$('.js-addreview').live('click', function(){
-		event.preventDefault();
 		$('#textarea').focus();
+		return false;
 	});
 	
 	var $nav = $('nav');
@@ -34,18 +34,18 @@ $('document').ready(function(){
 	
 	
 	$popreg.bind('click', function () {
-		event.preventDefault();
 		APP.popup.openPopup(self.cst.EMPTY, '/tmpl/popup/reg.tmpl');
+		return false;
 	});
 	
 	$sortcost.find('.link').bind('click', function (){
-		event.preventDefault();
 		APP.popup.openPopupMini(self.cst.SORT, $(this));
+		return false;
 	});
 	
 	$location.bind('click', function () {
-		event.preventDefault();
 		APP.popup.openPopupMini(self.cst.LOCATION, $(this));
+		return false;
 	});
 	
 	$typehair.find('.icon-checkbox').bind('click', function(){
@@ -60,8 +60,8 @@ $('document').ready(function(){
 	});
 	
 	$typehair.find('.typehair').bind('click', function(){
-		event.preventDefault();
 		APP.popup.openPopupMini(self.cst.TYPE_HAIR, $(this));
+		return false;
 	});
 
 	

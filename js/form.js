@@ -22,8 +22,8 @@
 			
 		var _checkCategory = function () {
 				$services.find('.able-category').live('click', function(){
-					event.preventDefault();
 					APP.popup.openPopup(APP.cst.EMPTY, '/tmpl/popup/openprice.tmpl');
+					return false;
 				});
 
 				$services.find('.services-select').live('click', function(){
