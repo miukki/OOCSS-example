@@ -5,7 +5,7 @@
 	var $typehair = $('#typehair');
 	var $location = $nav.find('.location');
 	var $location_index = $nav.find('.location').data('index');
-	var $sortcost = $('#sortcost');
+	var $sortcost = $('#sortcost').find('.link');
 	var $popup = $('#popup');
 	var $dimmer = $('#dimmer');
 	var $header = $('header');
@@ -16,7 +16,7 @@
 		return false;
 	});
 
-	$sortcost.find('.link').bind('click', function (){
+	$sortcost.bind('click', function (){
 		self.openPopupMini(APP.cst.SORT, $(this));
 		return false;
 	});
@@ -48,15 +48,17 @@
 					$.each(list.find('li').get(), function(i, v){
 						console.log(v, $location_index);
 						$(v).removeClass('active');
-						if($(v).data("index") == $location_index){
+						if(i == $location_index){
+							console.log(i);
 							$(v).addClass('active');
 						};
 						$(v).live('click', function(){
-							$(elem).attr('data-index', $(this).data("index"));
+							$(elem).attr('data-index', i);
 							console.log($(elem));
 							
 							$(elem).html('').html($(this).find('.txt').text());
-							$location_index = $(this).data("index");
+							$location_index = i;
+							 console.log($location_index);
 							self.closePopup();
 						});
 					});

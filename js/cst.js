@@ -1,6 +1,7 @@
 (function() {
 	APP.cst = {
 		'TYPE_HAIR': [
+		  { name: "любая", cnt: "330" },
 		  { name: "короткая", cnt: "330" },
 		  { name: "длинная", cnt: "14" },
 		  { name: "средняяя", cnt: "50" }
