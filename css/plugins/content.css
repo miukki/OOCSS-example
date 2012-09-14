@@ -11,6 +11,7 @@ a:visited {
 a:active {
 	color: #971f20;
 }
+.active {cursor:default !important;}
 
 a.line {border:none;text-decoration:underline;}
 a.line:hover {text-decoration:none !important;}

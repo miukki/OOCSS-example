@@ -21,16 +21,26 @@
 	font-size:0.9em;
 }
 
-
 .pop-head {
-	position:absolute;width:218px;background:white;border:1px solid #998a96;z-index:2;display:none;
+	position:absolute;width:920px;background:#fafafa;border:1px solid black;z-index:2;display:none; top:30%; left:50%; margin-left:-460px;
+	border-radius:20px;
+	-webkit-border-radius:20px;
+	box-shadow: 0 7px 10px  0 rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 7px 10px  0 rgba(0,0,0,0.5);
 }
 .pop-head:before {
-	content:"";display:block;width:10px;height:6px;top:-6px;left:50%;margin-left:-5px;
-	background:url('/img/arrow/arrow-pop.png') no-repeat; position:absolute;
+	content:"";display:block;width:20px;height:12px;top:-12px;left:25%;margin-left:-10px;
+	background:url('/img/arrow/arrow-pop-head.png') no-repeat; position:absolute;
 }
 
-
+.pop-head ul {margin: 20px ; text-align:left; }
+.pop-head ul li {display:inline-block;margin-left:35px;}
+.pop-head ul li:first-child {margin-left:0px;}
+.pop-head .url, .pop-head .h {display:block;} 
+.pop-head .h {font-style:italic;  color:#4d484e; border-bottom:1px solid #d5ccd1;margin-bottom:15px;}
+.pop-head .url {line-height:1.0; padding:5px 0; cursor:pointer;font-size:1.1em;}
+.pop-head .url.active, .pop-head .url:hover {color:black;}
+	
 .pop-min {
 	position:absolute;width:218px;background:white;border:1px solid #998a96;z-index:2;display:none;
 }
