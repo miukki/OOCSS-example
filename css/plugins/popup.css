@@ -20,6 +20,17 @@
 	height:auto; position: absolute; bottom:10%; left:50%; width: 300px; margin-left: -150px; text-align:center;
 	font-size:0.9em;
 }
+
+
+.pop-head {
+	position:absolute;width:218px;background:white;border:1px solid #998a96;z-index:2;display:none;
+}
+.pop-head:before {
+	content:"";display:block;width:10px;height:6px;top:-6px;left:50%;margin-left:-5px;
+	background:url('/img/arrow/arrow-pop.png') no-repeat; position:absolute;
+}
+
+
 .pop-min {
 	position:absolute;width:218px;background:white;border:1px solid #998a96;z-index:2;display:none;
 }

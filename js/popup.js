@@ -15,9 +15,14 @@
 		self.openPopupMini(APP.cst.LOCATION, $(this));
 		return false;
 	});
+
+	$sortcost.find('.link').bind('click', function (){
+		self.openPopupMini(APP.cst.SORT, $(this));
+		return false;
+	});
+
 	
 	self.openPopupMini = function (data, elem) {
-		console.log($location_index);
 		$dimmer.show();
 		var tpl = '/tmpl/popup/mini.tmpl';
 		$.get(tpl, function (template) {
@@ -48,7 +53,9 @@
 						};
 						$(v).live('click', function(){
 							$(elem).attr('data-index', $(this).data("index"));
-							$(elem).text('район: ' + $(this).find('.txt').text());
+							console.log($(elem));
+							
+							$(elem).html('').html($(this).find('.txt').text());
 							$location_index = $(this).data("index");
 							self.closePopup();
 						});

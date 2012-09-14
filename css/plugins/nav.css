@@ -9,7 +9,8 @@ nav {
 	box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);
 	-webkit-box-shadow:0 1px 1px rgba(0, 0, 0, 0.1);
 }
-nav li { display:inline-block; padding: 0 15px; position: relative;}
+nav li { display:inline-block; padding: 0 12px; position: relative;}
+nav li.sortcost {padding: 0 0 0 12px;}
 nav li:before {
     content: ""; display:block; width: 1px ; height: 12px; background: #d9d9d9; left: 0px; top: 3px; position: absolute;
 }

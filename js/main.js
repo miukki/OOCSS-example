@@ -38,10 +38,6 @@ $('document').ready(function(){
 		return false;
 	});
 	
-	$sortcost.find('.link').bind('click', function (){
-		APP.popup.openPopupMini(self.cst.SORT, $(this));
-		return false;
-	});
 	
 	$typehair.find('.icon-checkbox').bind('click', function(){
 		var elem = $(this);

@@ -39,7 +39,6 @@ i { background-repeat: no-repeat; display: inline-block; vertical-align:middle;}
 }
 .sortcost.up .icon-sort {background-position: -24px 0px;}
 .sortcost.down .icon-sort {background-position: -39px 0px;}
-.sortcost.up .link:before{content:"от дорогих к дешевым";}
 .sortcost.down .link:before{content:"от дешевых к дорогим";}
 
 .icon-search {
